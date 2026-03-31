@@ -6,15 +6,21 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-white/5 bg-slate-950/70 backdrop-blur-md">
-      <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-4 sm:px-6">
+      <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 sm:px-6">
         <Link
           to="/"
           className="flex items-center text-white no-underline"
           onClick={() => setMenuOpen(false)}
+          aria-label="Home"
         >
-          <span className="font-display text-lg font-bold tracking-tight">
-            SF App
-          </span>
+          <img
+            src="/logo.png"
+            alt="Logo"
+            className="h-16 w-auto object-contain sm:h-25"
+            onError={(e) => {
+              e.currentTarget.src = '/logo.png'
+            }}
+          />
         </Link>
 
         <nav className="hidden items-center gap-10 text-sm font-medium tracking-wide sm:flex">

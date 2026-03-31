@@ -74,7 +74,7 @@ export default function HomePage() {
         {/* Desktop/large: full text left */}
         <div className="hidden lg:block">
           <h1 className="font-display text-4xl font-bold leading-tight tracking-tight sm:text-5xl">
-            We&apos;re recruiting new social hosts and live creators
+            Advance Future Talent
           </h1>
           <p className="mt-5 text-lg text-white/75 sm:text-xl">
             Be part of the first platform built around hosts who make real-time
@@ -102,7 +102,7 @@ export default function HomePage() {
         {/* Mobile/small: only title + intro before image */}
         <div className="lg:hidden">
           <h1 className="font-display text-4xl font-bold leading-tight tracking-tight sm:text-5xl">
-            We&apos;re recruiting new social hosts and live creators
+            Advance Future Talent
           </h1>
           <p className="mt-5 text-lg text-white/75 sm:text-xl">
             Be part of the first platform built around hosts who make real-time
@@ -113,7 +113,7 @@ export default function HomePage() {
         <div className="flex justify-center lg:justify-end">
           <img
             src="/mobile.png"
-            alt="SF App running on a smartphone, showing the host profile experience"
+            alt="The app running on a smartphone, showing the host profile experience"
             className="h-auto w-full max-w-[min(100%,440px)] lg:max-w-[min(100%,560px)] select-none drop-shadow-[0_28px_64px_rgba(0,0,0,0.55)]"
             decoding="async"
             fetchPriority="high"
@@ -332,7 +332,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Agency — hidden for now (re-add Link from react-router-dom when restoring)
+      {/* Agency */}
       <section className="border-t border-white/10 py-16 text-center">
         <h2 className="font-display text-2xl font-bold sm:text-3xl">
           <span aria-hidden>💸</span> Running an agency?
@@ -341,21 +341,15 @@ export default function HomePage() {
           We partner with teams who recruit and coach hosts at scale. Tell us
           about your structure and we&apos;ll explore cooperation.
         </p>
-        <button
-          type="button"
-          className="mt-8 w-full max-w-md rounded-full bg-white px-8 py-4 font-display text-sm font-bold uppercase tracking-widest text-slate-950 transition hover:bg-rose-50"
+        <a
+          href="https://docs.google.com/forms/d/e/1FAIpQLSd5x0qP_LkQfX6_DPDE72E0Whc9cCIKAQUkpMHKjdKzFbJOFA/viewform"
+          target="_blank"
+          rel="noreferrer noopener"
+          className="mt-8 inline-flex w-full max-w-md items-center justify-center rounded-full bg-white px-8 py-4 font-display text-sm font-bold uppercase tracking-widest text-slate-950 transition hover:bg-rose-50"
         >
           I represent an agency
-        </button>
-        <p className="mt-6 text-sm text-white/45">
-          Prefer details first?{' '}
-          <Link to="/faq" className="text-rose-400 underline-offset-4 hover:underline">
-            Read the FAQ
-          </Link>
-          .
-        </p>
+        </a>
       </section>
-      */}
 
       {/* Trust strip removed */}
     </div>
