@@ -74,7 +74,7 @@ export default function HomePage() {
         {/* Desktop/large: full text left */}
         <div className="hidden lg:block">
           <h1 className="font-display text-4xl font-bold leading-tight tracking-tight sm:text-5xl">
-            Advance Future Talent
+            Advanced Talent Group
           </h1>
           <p className="mt-5 text-lg text-white/75 sm:text-xl">
             Be part of the first platform built around hosts who make real-time
@@ -102,7 +102,7 @@ export default function HomePage() {
         {/* Mobile/small: only title + intro before image */}
         <div className="lg:hidden">
           <h1 className="font-display text-4xl font-bold leading-tight tracking-tight sm:text-5xl">
-            Advance Future Talent
+            Advanced Talent Group
           </h1>
           <p className="mt-5 text-lg text-white/75 sm:text-xl">
             Be part of the first platform built around hosts who make real-time
