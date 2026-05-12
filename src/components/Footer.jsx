@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 const InstagramIcon = () => (
   <svg
     className="h-5 w-5"
@@ -64,6 +66,20 @@ export default function Footer() {
             <TikTokIcon />
           </a>
         </div>
+        <nav
+          className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-sm text-white/60"
+          aria-label="Legal"
+        >
+          <Link to="/privacy" className="transition hover:text-rose-300 hover:underline">
+            Privacy Policy
+          </Link>
+          <span className="text-white/25" aria-hidden>
+            ·
+          </span>
+          <Link to="/cookies" className="transition hover:text-rose-300 hover:underline">
+            Cookies Policy
+          </Link>
+        </nav>
         <p className="text-sm text-white/45">
           Copyright {new Date().getFullYear()}. All rights reserved.
         </p>
