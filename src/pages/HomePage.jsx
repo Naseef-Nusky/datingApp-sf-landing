@@ -8,6 +8,7 @@ import {
   Headphones,
   BookOpen,
 } from 'lucide-react'
+import { TELEGRAM_URL, WHATSAPP_HREF } from '../config/contact.js'
 
 const heroBullets = [
   'Work from anywhere with a schedule you control',
@@ -89,7 +90,7 @@ export default function HomePage() {
             ))}
           </ul>
           <a
-            href="https://wa.me/"
+            href={WHATSAPP_HREF}
             target="_blank"
             rel="noreferrer noopener"
             className="mt-10 inline-flex w-full max-w-md items-center justify-center gap-2 rounded-full bg-white px-8 py-4 font-display text-sm font-bold uppercase tracking-widest text-slate-950 shadow-lg transition hover:bg-rose-50 sm:w-auto"
@@ -131,7 +132,7 @@ export default function HomePage() {
             ))}
           </ul>
           <a
-            href="https://wa.me/"
+            href={WHATSAPP_HREF}
             target="_blank"
             rel="noreferrer noopener"
             className="mt-10 inline-flex w-full max-w-md items-center justify-center gap-2 rounded-full bg-white px-8 py-4 font-display text-sm font-bold uppercase tracking-widest text-slate-950 shadow-lg transition hover:bg-rose-50 sm:w-auto"
@@ -295,7 +296,7 @@ export default function HomePage() {
           </div>
           <div className="mt-8 flex flex-col items-stretch justify-center gap-4 sm:flex-row sm:justify-center">
             <a
-              href="https://t.me/"
+              href={TELEGRAM_URL}
               target="_blank"
               rel="noreferrer noopener"
               className="inline-flex items-center justify-center gap-2 rounded-full px-8 py-4 font-semibold text-white shadow-lg transition hover:brightness-110"
@@ -312,7 +313,7 @@ export default function HomePage() {
               Apply now
             </a>
             <a
-              href="https://wa.me/"
+              href={WHATSAPP_HREF}
               target="_blank"
               rel="noreferrer noopener"
               className="inline-flex items-center justify-center gap-2 rounded-full px-8 py-4 font-semibold text-white shadow-lg transition hover:brightness-110"
